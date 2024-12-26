@@ -1,0 +1,19 @@
+<div class="testimonial">
+  <p class="comment title">{{title}}</p>
+  <p class="comment">{{comment}}</p>
+  <div class="infos-container">
+    <img *ngIf="image" [src]="image" alt="" class="avatar">
+    <div class="infos">
+      <p class="name">{{ name }}</p>
+      <p *ngIf="title" class="town">{{town}}</p>
+      <div class="stars">
+        <img src="assets/img/svg10.svg">
+        <img src="assets/img/svg10.svg">
+        <img src="assets/img/svg10.svg">
+        <img src="assets/img/svg10.svg">
+        <img src="assets/img/svg10.svg">
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,60 @@
+.testimonial {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 452px;
+  height: 323px;
+
+  &:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.38);
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+
+  .name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  p {
+    text-align: start !important;
+  }
+
+  .town{
+    color: #606176;
+    font-size: 14px;
+  }
+  .title {
+    font-size: 22px;
+    color: #101130;
+    font-weight: 500;
+  }
+
+  .infos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 67px;
+    margin-top: 50px;
+  }
+  .stars{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+}

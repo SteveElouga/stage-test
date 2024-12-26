@@ -1,0 +1,19 @@
+<section class="course-list">
+  <div class="title">
+    <div class="course-list-title">How our online public school works</div>
+    <button>View all courses</button>
+  </div>
+  <div class="courses">
+    <div class="card" *ngFor="let course of courses" [title]="course.title">
+      <img [src]="course.image">
+      <div class="description">{{course.description}}</div>
+      <div class="course-p">
+        <div> <img src="assets/img/svg5.svg">1,45690</div>
+        <div><img src="assets/img/svg6.svg">4 months</div>
+      </div>
+      <button><img class="buy" src="assets/img/svg7.svg"
+                   style="width: 18px; height: 14px; margin-right: 10px;">Add to
+                                                                                                               cart</button>
+    </div>
+  </div>
+</section>

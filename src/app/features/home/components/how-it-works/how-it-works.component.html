@@ -1,0 +1,14 @@
+<section class="how-it-works">
+  <div class="man-cover">
+    <div class="background-man2"></div>
+    <img class="man2" src="assets/img/man22.png">
+    <img class="image2" src="assets/img/image2.png">
+  </div>
+  <div class="how-it-works-card">
+    <div class="how-it-works-title">How our online public school works</div>
+    <div class="cards">
+      <app-card *ngFor="let item of items" [title]="item.title" [description]="item.description"
+                [image]="item.image"></app-card>
+    </div>
+  </div>
+</section>

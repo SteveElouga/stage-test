@@ -1,0 +1,118 @@
+.video-testimonial{
+  padding: 20px;
+  max-width: 1160px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title-block{
+    width: 476px;
+    height: 324px;
+    text-align: start;
+  }
+
+  .title{
+    font-size: 44px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .description{
+    font-size: 18px;
+  }
+  button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #F77E53;
+    color: #fff;
+    width: 200px;
+    height: 62px;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:hover{
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+      background-color: #a9553a;
+    }
+  }
+  .video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 589px;
+    height: 620px;
+    position: relative;
+
+    .background{
+      background: #f6f5fa;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 545px;
+      height: 565px;
+      border-radius: 18px;
+      z-index: 0
+    }
+    video {
+      width: 530px;
+      height: 360px;
+      max-height: 400px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      border-radius: 18px;
+      transform: translateY(-50%);
+    }
+    .play-video-container{
+      position: absolute;
+      left: 50%;
+      top:50%;
+      transform: translateX(calc(-50% - 28px)) translateY(-50%);
+      background: #2076FF;
+      width: 65px;
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+    .vignettes{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      height: 120px;
+      position: absolute;
+      bottom: 0;
+
+      .vignette {
+        width: 150px;
+        border-radius: 12px;
+        padding: 5px 10px;
+        background: white;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.24);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img{
+          width: 80px;
+          height: 45px;
+          border-radius: 8px;
+        }
+
+        span{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

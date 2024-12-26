@@ -1,0 +1,14 @@
+<section class="testimonials">
+  <div class="title-container">
+    <div class="title">Transform your life through education</div>
+    <div class="change-button">
+      <img class="navigate-left" src="assets/img/svg9.svg">
+      <img src="assets/img/svg9.svg">
+    </div>
+  </div>
+  <div class="testimonials-list">
+    <app-testimonial *ngFor="let testimonial of testimonials" [name]="testimonial.name"
+                     [comment]="testimonial.comment" [image]="testimonial.image" [title]="testimonial.title"
+                     [town]="testimonial.town" [stars]="testimonial.stars"></app-testimonial>
+  </div>
+</section>

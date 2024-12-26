@@ -1,0 +1,25 @@
+.testimonials{
+  padding: 20px;
+  max-width: 1105px;
+  margin: 50px auto auto;
+  text-align: center;
+  .title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title {
+    width: 476px;
+    font-size: 44px;
+    font-weight: 700;
+  }
+  .navigate-left{
+    transform: rotate(180deg);
+  }
+  .testimonials-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}

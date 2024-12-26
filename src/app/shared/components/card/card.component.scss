@@ -1,0 +1,28 @@
+.card{
+  border-radius: 8px;
+  text-align: center;
+  width: 256px;
+  height: 222px;
+  text-align: start;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+
+
+
+  .card-image{
+    width: 36px;
+    height: 36px;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 16px;
+    background-color: #D2F1E1;
+    padding: 20px;
+  }
+
+  div{
+    font-weight: 400;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,18 @@
+<section class="pricing">
+  <div class="title">
+    <div class="pricing-list-title">Transform your life through education</div>
+    <button>Upgrade now</button>
+  </div>
+  <div class="plans">
+    <div *ngFor="let plan of plans" class="plan {{plan.status}}">
+      <div class="formule {{plan.status}}"><span>{{plan.name}}</span></div>
+      <p class="price">
+        ${{plan.price}}
+      </p>
+      <ul class="{{plan.status}}">
+        <li *ngFor="let feature of plan.features"> {{feature}}</li>
+      </ul>
+      <button class="buy-plan {{plan.status}}">Buy Plan</button>
+    </div>
+  </div>
+</section>
