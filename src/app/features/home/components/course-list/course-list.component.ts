@@ -13,11 +13,12 @@ import {CommonModule} from '@angular/common';
   styleUrl: './course-list.component.scss'
 })
 export class CourseListComponent {
+  // Déclaration du tableau de cours (qui représente les données affichées par le composant)
   courses = [
     {
-      title : "Hands-On Python & R In Data Science",
-      description : "Hands-On Python & R In Data Science",
-      image : 'assets/img/406dd2182f3ac9228cac57c4f1eddac1.png',
+      title : "Hands-On Python & R In Data Science", // Le titre du cours
+      description : "Hands-On Python & R In Data Science", // La description du cours
+      image : 'assets/img/406dd2182f3ac9228cac57c4f1eddac1.png', // Le chemin vers l'image du cours
     },
     {
       title : "Science and Machine Learning Bootcamp",

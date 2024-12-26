@@ -11,6 +11,7 @@ import {ButtonComponent} from '../../../../shared/components/button/button.compo
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+  // Fonction qui se lance quand le bouton est cliqué.
   handleButtonClick(){
     console.log("Button Clicked");
   }

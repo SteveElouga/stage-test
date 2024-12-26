@@ -13,11 +13,12 @@ import {CommonModule} from '@angular/common';
   styleUrl: './how-it-works.component.scss'
 })
 export class HowItWorksComponent {
+  // Tableau contenant la liste des items avec un titre, une description et un chemin vers une image (ici un logo)
   items = [
     {
-      title : "Virtual learning",
-      description : "The only costs are for standard school supplies and voluntary field trips.",
-      image: 'assets/img/svg1.svg'
+      title : "Virtual learning",  // Le titre de la fonctionnalité
+      description : "The only costs are for standard school supplies and voluntary field trips.", // La description de la fonctionnalité
+      image: 'assets/img/svg1.svg' // Le chemin vers l'image de la fonctionnalité
     },
     {
       title : "Meaningful Education",

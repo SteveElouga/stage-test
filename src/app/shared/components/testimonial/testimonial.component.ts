@@ -9,13 +9,15 @@ import {CommonModule} from '@angular/common';
   styleUrl: './testimonial.component.scss'
 })
 export class TestimonialComponent {
-  @Input() name: string = '';
-  @Input() comment: string = '';
-  @Input() image: string | null = null;
-  @Input() title: string | null = null
-  @Input() town: string | null = null
-  @Input() stars: number | null = null
+  // Les propriétés d'entrées pour configurer le composant
+  @Input() name: string = ''; // Nom de l'auteur du testimonial
+  @Input() comment: string = ''; // Le commentaire du testimonial
+  @Input() image: string | null = null; // L'image de l'auteur (optionnelle)
+  @Input() title: string | null = null; // Le titre du commentaire (optionnel)
+  @Input() town: string | null = null; // La ville de l'auteur (optionnel)
+  @Input() stars: number | null = null; // le nombre d'étoiles (optionnel)
 
+  // Une fonction qui génère un tableau d'indices en fonction du nombre d'etoiles afin de pouvoir itérer sur ce tableau dans le template.
   getArray(stars: number | null) {
     return Array(stars).fill(0).map((x,i) => i+1)
   }

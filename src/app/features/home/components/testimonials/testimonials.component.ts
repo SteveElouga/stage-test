@@ -11,14 +11,15 @@ import {TestimonialComponent} from '../../../../shared/components/testimonial/te
   styleUrl: './testimonials.component.scss'
 })
 export class TestimonialsComponent {
+  // Déclaration du tableau des testimonials
   testimonials = [
     {
-      name : "Wilson Thai",
-      title: "“Love mathematics because of Besnik Academy”" ,
-      comment : "“The curriculum was directly targeted toward applied techniques with high profile projects - real datasets with industry partners. It helped me achieve my career transition goal.“",
-      image : "assets/img/img9.png",
-      town : "Ontario, Canada",
-      stars: 5
+      name : "Wilson Thai", // Nom de la personne ayant fait le témoignage.
+      title: "“Love mathematics because of Besnik Academy”" , // Titre du témoignage.
+      comment : "“The curriculum was directly targeted toward applied techniques with high profile projects - real datasets with industry partners. It helped me achieve my career transition goal.“", // Commentaire du témoignage.
+      image : "assets/img/img9.png", // Chemin vers l'image de la personne ayant fait le témoignage.
+      town : "Ontario, Canada", // Ville de la personne ayant fait le témoignage.
+      stars: 5 // Le nombre d'étoiles.
     },
     {
       name : "Milena Belmar",

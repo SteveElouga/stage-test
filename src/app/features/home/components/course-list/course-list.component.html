@@ -4,16 +4,20 @@
     <button>View all courses</button>
   </div>
   <div class="courses">
+    <!-- Boucle ngFor qui itère sur le tableau courses et affiche le composant card avec les informations du cours -->
     <div class="card" *ngFor="let course of courses" [title]="course.title">
-      <img [src]="course.image">
-      <div class="description">{{course.description}}</div>
+      <img [src]="course.image"> <!-- affiche l'image du cours -->
+      <div class="description">{{course.description}}</div> <!-- Affiche la description du cours -->
       <div class="course-p">
-        <div> <img src="assets/img/svg5.svg">1,45690</div>
-        <div><img src="assets/img/svg6.svg">4 months</div>
+        <div> <img src="assets/img/svg5.svg">1,45690</div> <!-- affiche le prix du cours -->
+        <div><img src="assets/img/svg6.svg">4 months</div>  <!-- affiche la durée du cours -->
       </div>
+                                 <!-- affiche le bouton pour ajouter au panier -->
       <button><img class="buy" src="assets/img/svg7.svg"
                    style="width: 18px; height: 14px; margin-right: 10px;">Add to
-                                                                                                               cart</button>
+                                                                          cart</button>
     </div>
   </div>
+  <!-- affiche le bouton pour voir tous les cours -->
+  <button>View all courses</button>
 </section>

@@ -11,8 +11,9 @@ import {NgIf} from '@angular/common';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() title: string = '';
-  @Input() description: string = '';
-  @Input() image: string | null = null;
-  @Input() url: string | null = null;
+  // Les propriétés d'entrées pour configurer le composant
+  @Input() title: string = '';  // Le titre de la carte
+  @Input() description: string = ''; // La description de la carte
+  @Input() image: string | null = null; // Le chemin vers l'image (optionnel)
+  @Input() url: string | null = null; // L'URL (optionnelle)
 }

@@ -10,12 +10,13 @@ import {ButtonComponent} from '../../../../shared/components/button/button.compo
   styleUrl: './pricing-grid.component.scss'
 })
 export class PricingGridComponent {
+  // Tableau contenant les plans tarifaires.
   plans = [
     {
-      name : 'Regular',
-      price : 65,
-      status: 'regular',
-      features : [
+      name : 'Regular', // Le nom du plan
+      price : 65,  // Le prix du plan
+      status: 'regular', // Le style du plan
+      features : [ // Les différentes fonctionnalités du plan
         '1 Day Event',
         '1 Speaker',
         'Interaction Sessions',
